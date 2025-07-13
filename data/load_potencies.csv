@@ -1,0 +1,999 @@
+action_name,job_name,patch_number,potency
+Malefic,astrologian,7.1,150
+Malefic,astrologian,7.2,150
+"Gravity",astrologian,7.1,120
+"Gravity",astrologian,7.2,120
+"Malefic II",astrologian,7.1,160
+"Malefic II",astrologian,7.2,160
+Earthly Star,astrologian,7.1,205
+Earthly Star,astrologian,7.2,205
+Stellar Detonation,astrologian,7.1,205
+Stellar Detonation,astrologian,7.2,205
+Malefic III,astrologian,7.1,190
+Malefic III,astrologian,7.2,190
+Malefic IV,astrologian,7.1,230
+Malefic IV,astrologian,7.2,230
+Fall Malefic,astrologian,7.1,270
+Fall Malefic,astrologian,7.2,270
+Gravity II,astrologian,7.1,130
+Gravity II,astrologian,7.2,140
+Macrocosmos,astrologian,7.1,270
+Macrocosmos,astrologian,7.2,270
+Oracle,astrologian,7.1,860
+Oracle,astrologian,7.2,860
+Blizzard,blackmage,7.1,180
+Blizzard,blackmage,7.2,180
+Fire,blackmage,7.1,180
+Fire,blackmage,7.2,180
+Thunder,blackmage,7.1,100
+Thunder,blackmage,7.2,100
+Blizzard II,blackmage,7.1,80
+Blizzard II,blackmage,7.2,80
+"Scathe",blackmage,7.1,100
+"Scathe",blackmage,7.2,100
+Fire II,blackmage,7.1,80
+Fire II,blackmage,7.2,80
+Thunder II,blackmage,7.1,60
+Thunder II,blackmage,7.2,60
+Fire III,blackmage,7.1,290
+Fire III,blackmage,7.2,290
+"Blizzard III",blackmage,7.1,290
+"Blizzard III",blackmage,7.2,290
+"Freeze",blackmage,7.1,120
+"Freeze",blackmage,7.2,120
+"Thunder III",blackmage,7.1,120
+"Thunder III",blackmage,7.2,120
+"Flare",blackmage,7.1,240
+"Flare",blackmage,7.2,240
+"Blizzard IV",blackmage,7.1,300
+"Blizzard IV",blackmage,7.2,300
+"Fire IV",blackmage,7.1,300
+"Fire IV",blackmage,7.2,300
+Thunder IV,blackmage,7.1,80
+Thunder IV,blackmage,7.2,80
+"Foul",blackmage,7.1,600
+"Foul",blackmage,7.2,600
+Despair,blackmage,7.1,350
+Despair,blackmage,7.2,350
+Xenoglossy,blackmage,7.1,890
+Xenoglossy,blackmage,7.2,890
+High Fire II,blackmage,7.1,100
+High Fire II,blackmage,7.2,100
+High Blizzard II,blackmage,7.1,100
+High Blizzard II,blackmage,7.2,100
+Paradox,blackmage,7.1,540
+Paradox,blackmage,7.2,540
+High Thunder,blackmage,7.1,150
+High Thunder,blackmage,7.2,150
+High Thunder II,blackmage,7.1,100
+High Thunder II,blackmage,7.2,100
+Flare Star,blackmage,7.1,500
+Flare Star,blackmage,7.2,500
+Heavy Shot,bard,7.1,160
+Heavy Shot,bard,7.2,160
+Straight Shot,bard,7.1,200
+Straight Shot,bard,7.2,200
+Venomous Bite,bard,7.1,100
+Venomous Bite,bard,7.2,100
+Bloodletter,bard,7.1,130
+Bloodletter,bard,7.2,130
+Quick Nock,bard,7.1,110
+Quick Nock,bard,7.2,110
+Wide Volley,bard,7.1,140
+Wide Volley,bard,7.2,140
+"Windbite",bard,7.1,60
+"Windbite",bard,7.2,60
+"Rain of Death",bard,7.1,100
+"Rain of Death",bard,7.2,100
+"Empyreal Arrow",bard,7.1,260
+"Empyreal Arrow",bard,7.2,260
+"Iron Jaws",bard,7.1,100
+"Iron Jaws",bard,7.2,100
+"Sidewinder",bard,7.1,400
+"Sidewinder",bard,7.2,400
+Caustic Bite,bard,7.1,150
+Caustic Bite,bard,7.2,150
+Stormbite,bard,7.1,100
+Stormbite,bard,7.2,100
+"Refulgent Arrow",bard,7.1,280
+"Refulgent Arrow",bard,7.2,280
+Shadowbite,bard,7.1,170
+Shadowbite,bard,7.2,180
+Burst Shot,bard,7.1,220
+Burst Shot,bard,7.2,220
+Apex Arrow,bard,7.1,120
+Apex Arrow,bard,7.2,120
+Ladonsbite,bard,7.1,130
+Ladonsbite,bard,7.2,140
+Blast Arrow,bard,7.1,600
+Blast Arrow,bard,7.2,600
+Heartbreak Shot,bard,7.1,180
+Heartbreak Shot,bard,7.2,180
+Resonant Arrow,bard,7.1,600
+Resonant Arrow,bard,7.2,600
+Cascade,dancer,7.1,220
+Cascade,dancer,7.2,220
+Fountain,dancer,7.1,120
+Fountain,dancer,7.2,120
+Windmill,dancer,7.1,100
+Windmill,dancer,7.2,120
+Reverse Cascade,dancer,7.1,280
+Reverse Cascade,dancer,7.2,280
+Bladeshower,dancer,7.1,100
+Bladeshower,dancer,7.2,100
+Fan Dance,dancer,7.1,180
+Fan Dance,dancer,7.2,180
+Rising Windmill,dancer,7.1,140
+Rising Windmill,dancer,7.2,160
+Fountainfall,dancer,7.1,340
+Fountainfall,dancer,7.2,340
+Bloodshower,dancer,7.1,180
+Bloodshower,dancer,7.2,200
+Fan Dance II,dancer,7.1,100
+Fan Dance II,dancer,7.2,100
+Fan Dance III,dancer,7.1,220
+Fan Dance III,dancer,7.2,220
+Saber Dance,dancer,7.1,520
+Saber Dance,dancer,7.2,520
+Tillana,dancer,7.1,600
+Tillana,dancer,7.2,600
+Fan Dance IV,dancer,7.1,420
+Fan Dance IV,dancer,7.2,420
+Starfall Dance,dancer,7.1,600
+Starfall Dance,dancer,7.2,600
+Last Dance,dancer,7.1,520
+Last Dance,dancer,7.2,520
+Finishing Move,dancer,7.1,850
+Finishing Move,dancer,7.2,850
+Dance of the Dawn,dancer,7.1,1000
+Dance of the Dawn,dancer,7.2,1000
+True Thrust,dragoon,7.1,230
+True Thrust,dragoon,7.2,230
+Vorpal Thrust,dragoon,7.1,130
+Vorpal Thrust,dragoon,7.2,130
+"Piercing Talon",dragoon,7.1,200
+"Piercing Talon",dragoon,7.2,200
+Disembowel,dragoon,7.1,140
+Disembowel,dragoon,7.2,140
+Full Thrust,dragoon,7.1,100
+Full Thrust,dragoon,7.2,100
+"Jump",dragoon,7.1,320
+"Jump",dragoon,7.2,320
+"Doom Spike",dragoon,7.1,110
+"Doom Spike",dragoon,7.2,110
+Chaos Thrust,dragoon,7.1,100
+Chaos Thrust,dragoon,7.2,100
+"Dragonfire Dive",dragoon,7.1,500
+"Dragonfire Dive",dragoon,7.2,500
+"Fang and Claw",dragoon,7.1,140
+"Fang and Claw",dragoon,7.2,140
+"Wheeling Thrust",dragoon,7.1,140
+"Wheeling Thrust",dragoon,7.2,140
+"Geirskogul",dragoon,7.1,280
+"Geirskogul",dragoon,7.2,280
+Sonic Thrust,dragoon,7.1,100
+Sonic Thrust,dragoon,7.2,100
+Drakesbane,dragoon,7.1,440
+Drakesbane,dragoon,7.2,460
+Mirage Dive,dragoon,7.1,380
+Mirage Dive,dragoon,7.2,380
+"Nastrond",dragoon,7.1,720
+"Nastrond",dragoon,7.2,720
+Coerthan Torment,dragoon,7.1,100
+Coerthan Torment,dragoon,7.2,100
+High Jump,dragoon,7.1,400
+High Jump,dragoon,7.2,400
+Raiden Thrust,dragoon,7.1,320
+Raiden Thrust,dragoon,7.2,320
+Stardiver,dragoon,7.1,820
+Stardiver,dragoon,7.2,840
+Draconian Fury,dragoon,7.1,130
+Draconian Fury,dragoon,7.2,130
+Heavens' Thrust,dragoon,7.1,140
+Heavens' Thrust,dragoon,7.2,160
+Chaotic Spring,dragoon,7.1,140
+Chaotic Spring,dragoon,7.2,140
+Wyrmwind Thrust,dragoon,7.1,440
+Wyrmwind Thrust,dragoon,7.2,440
+"Rise of the Dragon",dragoon,7.1,550
+"Rise of the Dragon",dragoon,7.2,550
+Lance Barrage,dragoon,7.1,130
+Lance Barrage,dragoon,7.2,130
+Spiral Blow,dragoon,7.1,140
+Spiral Blow,dragoon,7.2,140
+Starcross,dragoon,7.1,1000
+Starcross,dragoon,7.2,1000
+Hard Slash,darkknight,7.1,300
+Hard Slash,darkknight,7.2,300
+Syphon Strike,darkknight,7.1,240
+Syphon Strike,darkknight,7.2,240
+Unleash,darkknight,7.1,120
+Unleash,darkknight,7.2,120
+Unmend,darkknight,7.1,150
+Unmend,darkknight,7.2,150
+Souleater,darkknight,7.1,260
+Souleater,darkknight,7.2,260
+"Flood of Darkness",darkknight,7.1,100
+"Flood of Darkness",darkknight,7.2,100
+Stalwart Soul,darkknight,7.1,120
+Stalwart Soul,darkknight,7.2,120
+"Edge of Darkness",darkknight,7.1,300
+"Edge of Darkness",darkknight,7.2,300
+"Salted Earth",darkknight,7.1,50
+"Salted Earth",darkknight,7.2,50
+"Abyssal Drain",darkknight,7.1,240
+"Abyssal Drain",darkknight,7.2,240
+"Carve and Spit",darkknight,7.1,540
+"Carve and Spit",darkknight,7.2,540
+Bloodspiller,darkknight,7.1,600
+Bloodspiller,darkknight,7.2,600
+Quietus,darkknight,7.1,240
+Quietus,darkknight,7.2,240
+Flood of Shadow,darkknight,7.1,160
+Flood of Shadow,darkknight,7.2,160
+Edge of Shadow,darkknight,7.1,460
+Edge of Shadow,darkknight,7.2,460
+"Salt and Darkness",darkknight,7.1,500
+"Salt and Darkness",darkknight,7.2,500
+Shadowbringer,darkknight,7.1,600
+Shadowbringer,darkknight,7.2,600
+Scarlet Delirium,darkknight,7.1,620
+Scarlet Delirium,darkknight,7.2,620
+Comeuppance,darkknight,7.1,720
+Comeuppance,darkknight,7.2,720
+Torcleaver,darkknight,7.1,820
+Torcleaver,darkknight,7.2,820
+Impalement,darkknight,7.1,320
+Impalement,darkknight,7.2,300
+Disesteem,darkknight,7.1,1000
+Disesteem,darkknight,7.2,1000
+Keen Edge,gunbreaker,7.1,300
+Keen Edge,gunbreaker,7.2,300
+Brutal Shell,gunbreaker,7.1,240
+Brutal Shell,gunbreaker,7.2,240
+Demon Slice,gunbreaker,7.1,100
+Demon Slice,gunbreaker,7.2,100
+Lightning Shot,gunbreaker,7.1,150
+Lightning Shot,gunbreaker,7.2,150
+Danger Zone,gunbreaker,7.1,250
+Danger Zone,gunbreaker,7.2,250
+Solid Barrel,gunbreaker,7.1,240
+Solid Barrel,gunbreaker,7.2,240
+Burst Strike,gunbreaker,7.1,460
+Burst Strike,gunbreaker,7.2,460
+Demon Slaughter,gunbreaker,7.1,100
+Demon Slaughter,gunbreaker,7.2,100
+Sonic Break,gunbreaker,7.1,300
+Sonic Break,gunbreaker,7.2,300
+Gnashing Fang,gunbreaker,7.1,500
+Gnashing Fang,gunbreaker,7.2,500
+Savage Claw,gunbreaker,7.1,560
+Savage Claw,gunbreaker,7.2,560
+Wicked Talon,gunbreaker,7.1,620
+Wicked Talon,gunbreaker,7.2,620
+Bow Shock,gunbreaker,7.1,150
+Bow Shock,gunbreaker,7.2,150
+Jugular Rip,gunbreaker,7.1,240
+Jugular Rip,gunbreaker,7.2,240
+Abdomen Tear,gunbreaker,7.1,280
+Abdomen Tear,gunbreaker,7.2,280
+Eye Gouge,gunbreaker,7.1,320
+Eye Gouge,gunbreaker,7.2,320
+Fated Circle,gunbreaker,7.1,300
+Fated Circle,gunbreaker,7.2,300
+Blasting Zone,gunbreaker,7.1,800
+Blasting Zone,gunbreaker,7.2,800
+Hypervelocity,gunbreaker,7.1,200
+Hypervelocity,gunbreaker,7.2,200
+Double Down,gunbreaker,7.1,1200
+Double Down,gunbreaker,7.2,1200
+Fated Brand,gunbreaker,7.1,120
+Fated Brand,gunbreaker,7.2,120
+Reign of Beasts,gunbreaker,7.1,800
+Reign of Beasts,gunbreaker,7.2,1000
+Noble Blood,gunbreaker,7.1,1000
+Noble Blood,gunbreaker,7.2,1100
+Lion Heart,gunbreaker,7.1,1200
+Lion Heart,gunbreaker,7.2,1200
+Split Shot,machinist,7.1,140
+Split Shot,machinist,7.2,140
+Slug Shot,machinist,7.1,100
+Slug Shot,machinist,7.2,100
+Hot Shot,machinist,7.1,240
+Hot Shot,machinist,7.2,240
+Gauss Round,machinist,7.1,130
+Gauss Round,machinist,7.2,130
+Spread Shot,machinist,7.1,140
+Spread Shot,machinist,7.2,110
+Clean Shot,machinist,7.1,100
+Clean Shot,machinist,7.2,100
+"Heat Blast",machinist,7.1,200
+"Heat Blast",machinist,7.2,200
+"Rook Autoturret",machinist,7.1,35
+"Rook Autoturret",machinist,7.2,35
+Rook Overload,machinist,7.1,160
+Rook Overload,machinist,7.2,160
+"Ricochet",machinist,7.1,130
+"Ricochet",machinist,7.2,130
+"Auto Crossbow",machinist,7.1,160
+"Auto Crossbow",machinist,7.2,160
+"Heated Split Shot",machinist,7.1,220
+"Heated Split Shot",machinist,7.2,220
+"Drill",machinist,7.1,600
+"Drill",machinist,7.2,600
+"Heated Slug Shot",machinist,7.1,140
+"Heated Slug Shot",machinist,7.2,140
+Heated Clean Shot,machinist,7.1,160
+Heated Clean Shot,machinist,7.2,160
+Blazing Shot,machinist,7.1,240
+Blazing Shot,machinist,7.2,240
+Bioblaster,machinist,7.1,50
+Bioblaster,machinist,7.2,50
+Air Anchor,machinist,7.1,600
+Air Anchor,machinist,7.2,600
+Arm Punch,machinist,7.1,120
+Arm Punch,machinist,7.2,120
+Roller Dash,machinist,7.1,240
+Roller Dash,machinist,7.2,240
+Pile Bunker,machinist,7.1,340
+Pile Bunker,machinist,7.2,340
+Scattergun,machinist,7.1,160
+Scattergun,machinist,7.2,130
+Crowned Collider,machinist,7.1,390
+Crowned Collider,machinist,7.2,390
+Chain Saw,machinist,7.1,600
+Chain Saw,machinist,7.2,600
+Double Check,machinist,7.1,170
+Double Check,machinist,7.2,170
+Checkmate,machinist,7.1,170
+Checkmate,machinist,7.2,170
+Excavator,machinist,7.1,600
+Excavator,machinist,7.2,600
+Full Metal Field,machinist,7.1,900
+Full Metal Field,machinist,7.2,900
+Bootshine,monk,7.1,220
+Bootshine,monk,7.2,220
+True Strike,monk,7.1,300
+True Strike,monk,7.2,300
+Snap Punch,monk,7.1,270
+Snap Punch,monk,7.2,270
+"Steel Peak",monk,7.1,180
+"Steel Peak",monk,7.2,180
+Twin Snakes,monk,7.1,420
+Twin Snakes,monk,7.2,420
+Arm of the Destroyer,monk,7.1,110
+Arm of the Destroyer,monk,7.2,110
+Demolish,monk,7.1,360
+Demolish,monk,7.2,360
+"Rockbreaker",monk,7.1,150
+"Rockbreaker",monk,7.2,150
+"Howling Fist",monk,7.1,100
+"Howling Fist",monk,7.2,100
+"Four-point Fury",monk,7.1,140
+"Four-point Fury",monk,7.2,140
+Dragon Kick,monk,7.1,320
+Dragon Kick,monk,7.2,320
+"The Forbidden Chakra",monk,7.1,400
+"The Forbidden Chakra",monk,7.2,400
+Tornado Kick,monk,7.1,1200
+Tornado Kick,monk,7.2,1200
+Elixir Field,monk,7.1,800
+Elixir Field,monk,7.2,800
+Celestial Revolution,monk,7.1,600
+Celestial Revolution,monk,7.2,600
+Flint Strike,monk,7.1,800
+Flint Strike,monk,7.2,800
+Enlightenment,monk,7.1,200
+Enlightenment,monk,7.2,160
+Six-sided Star,monk,7.1,780
+Six-sided Star,monk,7.2,780
+Shadow of the Destroyer,monk,7.1,120
+Shadow of the Destroyer,monk,7.2,120
+Rising Phoenix,monk,7.1,900
+Rising Phoenix,monk,7.2,900
+Phantom Rush,monk,7.1,1500
+Phantom Rush,monk,7.2,1500
+Leaping Opo,monk,7.1,260
+Leaping Opo,monk,7.2,260
+Rising Raptor,monk,7.1,340
+Rising Raptor,monk,7.2,340
+Pouncing Coeurl,monk,7.1,310
+Pouncing Coeurl,monk,7.2,310
+Elixir Burst,monk,7.1,900
+Elixir Burst,monk,7.2,900
+Wind's Reply,monk,7.1,900
+Wind's Reply,monk,7.2,1040
+Fire's Reply,monk,7.1,1200
+Fire's Reply,monk,7.2,1400
+Spinning Edge,ninja,7.1,300
+Spinning Edge,ninja,7.2,300
+Gust Slash,ninja,7.1,240
+Gust Slash,ninja,7.2,240
+"Throwing Dagger",ninja,7.1,200
+"Throwing Dagger",ninja,7.2,200
+"Mug",ninja,7.1,150
+"Mug",ninja,7.2,150
+Trick Attack,ninja,7.1,300
+Trick Attack,ninja,7.2,300
+Aeolian Edge,ninja,7.1,200
+Aeolian Edge,ninja,7.2,220
+Death Blossom,ninja,7.1,100
+Death Blossom,ninja,7.2,100
+Assassinate,ninja,7.1,200
+Assassinate,ninja,7.2,200
+"Hakke Mujinsatsu",ninja,7.1,100
+"Hakke Mujinsatsu",ninja,7.2,100
+"Armor Crush",ninja,7.1,220
+"Armor Crush",ninja,7.2,240
+"Dream Within a Dream",ninja,7.1,180
+"Dream Within a Dream",ninja,7.2,180
+Hellfrog Medium,ninja,7.1,160
+Hellfrog Medium,ninja,7.2,160
+Dokumori,ninja,7.1,300
+Dokumori,ninja,7.2,300
+Bhavacakra,ninja,7.1,380
+Bhavacakra,ninja,7.2,400
+Phantom Kamaitachi,ninja,7.1,600
+Phantom Kamaitachi,ninja,7.2,600
+Hollow Nozuchi,ninja,7.1,50
+Hollow Nozuchi,ninja,7.2,50
+Forked Raiju,ninja,7.1,700
+Forked Raiju,ninja,7.2,700
+Fleeting Raiju,ninja,7.1,700
+Fleeting Raiju,ninja,7.2,700
+Kunai's Bane,ninja,7.1,600
+Kunai's Bane,ninja,7.2,600
+Deathfrog Medium,ninja,7.1,300
+Deathfrog Medium,ninja,7.2,260
+Zesho Meppo,ninja,7.1,700
+Zesho Meppo,ninja,7.2,700
+Tenri Jindo,ninja,7.1,1100
+Tenri Jindo,ninja,7.2,1100
+Fire in Red,pictomancer,7.1,440
+Fire in Red,pictomancer,7.2,520
+Aero in Green,pictomancer,7.1,480
+Aero in Green,pictomancer,7.2,560
+Water in Blue,pictomancer,7.1,520
+Water in Blue,pictomancer,7.2,600
+Fire II in Red,pictomancer,7.1,120
+Fire II in Red,pictomancer,7.2,180
+Mog of the Ages,pictomancer,7.1,1300
+Mog of the Ages,pictomancer,7.2,1000
+Pom Muse,pictomancer,7.1,1100
+Pom Muse,pictomancer,7.2,800
+Winged Muse,pictomancer,7.1,1100
+Winged Muse,pictomancer,7.2,800
+Aero II in Green,pictomancer,7.1,140
+Aero II in Green,pictomancer,7.2,200
+Water II in Blue,pictomancer,7.1,160
+Water II in Blue,pictomancer,7.2,220
+Hammer Stamp,pictomancer,7.1,560
+Hammer Stamp,pictomancer,7.2,480
+Blizzard in Cyan,pictomancer,7.1,800
+Blizzard in Cyan,pictomancer,7.2,900
+Blizzard II in Cyan,pictomancer,7.1,240
+Blizzard II in Cyan,pictomancer,7.2,360
+Stone in Yellow,pictomancer,7.1,840
+Stone in Yellow,pictomancer,7.2,940
+Thunder in Magenta,pictomancer,7.1,880
+Thunder in Magenta,pictomancer,7.2,980
+Stone II in Yellow,pictomancer,7.1,260
+Stone II in Yellow,pictomancer,7.2,380
+Thunder II in Magenta,pictomancer,7.1,280
+Thunder II in Magenta,pictomancer,7.2,400
+Holy in White,pictomancer,7.1,520
+Holy in White,pictomancer,7.2,600
+Hammer Brush,pictomancer,7.1,620
+Hammer Brush,pictomancer,7.2,520
+Polishing Hammer,pictomancer,7.1,680
+Polishing Hammer,pictomancer,7.2,560
+Comet in Black,pictomancer,7.1,880
+Comet in Black,pictomancer,7.2,980
+Rainbow Drip,pictomancer,7.1,1000
+Rainbow Drip,pictomancer,7.2,1000
+Clawed Muse,pictomancer,7.1,1100
+Clawed Muse,pictomancer,7.2,800
+Fanged Muse,pictomancer,7.1,1100
+Fanged Muse,pictomancer,7.2,800
+Retribution of the Madeen,pictomancer,7.1,1400
+Retribution of the Madeen,pictomancer,7.2,1100
+Star Prism,pictomancer,7.1,1400
+Star Prism,pictomancer,7.2,1100
+Riposte,redmage,7.1,130
+Riposte,redmage,7.2,130
+Jolt,redmage,7.1,170
+Jolt,redmage,7.2,170
+Verthunder,redmage,7.1,360
+Verthunder,redmage,7.2,360
+Corps-a-corps,redmage,7.1,130
+Corps-a-corps,redmage,7.2,130
+Veraero,redmage,7.1,360
+Veraero,redmage,7.2,360
+Scatter,redmage,7.1,120
+Scatter,redmage,7.2,120
+Verthunder II,redmage,7.1,140
+Verthunder II,redmage,7.2,140
+Veraero II,redmage,7.1,140
+Veraero II,redmage,7.2,140
+Verfire,redmage,7.1,380
+Verfire,redmage,7.2,380
+Verstone,redmage,7.1,380
+Verstone,redmage,7.2,380
+Zwerchhau,redmage,7.1,100
+Zwerchhau,redmage,7.2,100
+Displacement,redmage,7.1,180
+Displacement,redmage,7.2,180
+Engagement,redmage,7.1,180
+Engagement,redmage,7.2,180
+Fleche,redmage,7.1,480
+Fleche,redmage,7.2,480
+Redoublement,redmage,7.1,100
+Redoublement,redmage,7.2,100
+Moulinet,redmage,7.1,60
+Moulinet,redmage,7.2,60
+Contre Sixte,redmage,7.1,420
+Contre Sixte,redmage,7.2,420
+Jolt II,redmage,7.1,280
+Jolt II,redmage,7.2,280
+Impact,redmage,7.1,210
+Impact,redmage,7.2,210
+Verflare,redmage,7.1,650
+Verflare,redmage,7.2,650
+"Verholy",redmage,7.1,650
+"Verholy",redmage,7.2,650
+Reprise,redmage,7.1,100
+Reprise,redmage,7.2,100
+Scorch,redmage,7.1,750
+Scorch,redmage,7.2,750
+Verthunder III,redmage,7.1,440
+Verthunder III,redmage,7.2,440
+Veraero III,redmage,7.1,440
+Veraero III,redmage,7.2,440
+Jolt III,redmage,7.1,360
+Jolt III,redmage,7.2,360
+Resolution,redmage,7.1,850
+Resolution,redmage,7.2,850
+Vice of Thorns,redmage,7.1,700
+Vice of Thorns,redmage,7.2,800
+Grand Impact,redmage,7.1,600
+Grand Impact,redmage,7.2,600
+Prefulgence,redmage,7.1,900
+Prefulgence,redmage,7.2,1000
+Enchanted Riposte,redmage,7.1,300
+Enchanted Riposte,redmage,7.2,300
+Enchanted Zwerchhau,redmage,7.1,170
+Enchanted Zwerchhau,redmage,7.2,170
+Enchanted Redoublement,redmage,7.1,170
+Enchanted Redoublement,redmage,7.2,170
+Enchanted Moulinet,redmage,7.1,130
+Enchanted Moulinet,redmage,7.2,130
+Enchanted Moulinet Deux,redmage,7.1,140
+Enchanted Moulinet Deux,redmage,7.2,140
+Enchanted Moulinet Trois,redmage,7.1,150
+Enchanted Moulinet Trois,redmage,7.2,150
+Enchanted Reprise,redmage,7.1,420
+Enchanted Reprise,redmage,7.2,420
+Slice,reaper,7.1,420
+Slice,reaper,7.2,420
+Waxing Slice,reaper,7.1,260
+Waxing Slice,reaper,7.2,260
+Shadow of Death,reaper,7.1,300
+Shadow of Death,reaper,7.2,300
+Harpe,reaper,7.1,300
+Harpe,reaper,7.2,300
+Spinning Scythe,reaper,7.1,160
+Spinning Scythe,reaper,7.2,140
+Infernal Slice,reaper,7.1,280
+Infernal Slice,reaper,7.2,280
+Whorl of Death,reaper,7.1,100
+Whorl of Death,reaper,7.2,100
+Nightmare Scythe,reaper,7.1,140
+Nightmare Scythe,reaper,7.2,120
+Blood Stalk,reaper,7.1,340
+Blood Stalk,reaper,7.2,340
+Grim Swathe,reaper,7.1,140
+Grim Swathe,reaper,7.2,140
+Soul Slice,reaper,7.1,520
+Soul Slice,reaper,7.2,520
+Soul Scythe,reaper,7.1,180
+Soul Scythe,reaper,7.2,180
+Gibbet,reaper,7.1,500
+Gibbet,reaper,7.2,500
+Gallows,reaper,7.1,500
+Gallows,reaper,7.2,500
+Guillotine,reaper,7.1,200
+Guillotine,reaper,7.2,200
+Unveiled Gibbet,reaper,7.1,440
+Unveiled Gibbet,reaper,7.2,440
+Unveiled Gallows,reaper,7.1,440
+Unveiled Gallows,reaper,7.2,440
+Gluttony,reaper,7.1,520
+Gluttony,reaper,7.2,520
+Void Reaping,reaper,7.1,500
+Void Reaping,reaper,7.2,540
+Cross Reaping,reaper,7.1,500
+Cross Reaping,reaper,7.2,540
+Grim Reaping,reaper,7.1,200
+Grim Reaping,reaper,7.2,200
+Harvest Moon,reaper,7.1,800
+Harvest Moon,reaper,7.2,800
+Lemure's Slice,reaper,7.1,280
+Lemure's Slice,reaper,7.2,280
+Lemure's Scythe,reaper,7.1,100
+Lemure's Scythe,reaper,7.2,100
+Plentiful Harvest,reaper,7.1,720
+Plentiful Harvest,reaper,7.2,720
+Communio,reaper,7.1,1100
+Communio,reaper,7.2,1100
+Sacrificium,reaper,7.1,530
+Sacrificium,reaper,7.2,600
+Executioner's Gibbet,reaper,7.1,700
+Executioner's Gibbet,reaper,7.2,700
+Executioner's Gallows,reaper,7.1,700
+Executioner's Gallows,reaper,7.2,700
+Executioner's Guillotine,reaper,7.1,300
+Executioner's Guillotine,reaper,7.2,260
+Perfectio,reaper,7.1,1300
+Perfectio,reaper,7.2,1300
+Hakaze,samurai,7.1,200
+Hakaze,samurai,7.2,200
+Jinpu,samurai,7.1,140
+Jinpu,samurai,7.2,140
+Enpi,samurai,7.1,100
+Enpi,samurai,7.2,100
+Shifu,samurai,7.1,140
+Shifu,samurai,7.2,140
+Fuga,samurai,7.1,90
+Fuga,samurai,7.2,90
+Gekko,samurai,7.1,160
+Gekko,samurai,7.2,160
+Mangetsu,samurai,7.1,100
+Mangetsu,samurai,7.2,100
+Kasha,samurai,7.1,160
+Kasha,samurai,7.2,160
+Oka,samurai,7.1,100
+Oka,samurai,7.2,100
+Yukikaze,samurai,7.1,160
+Yukikaze,samurai,7.2,160
+Hissatsu: Shinten,samurai,7.1,250
+Hissatsu: Shinten,samurai,7.2,250
+Hissatsu: Gyoten,samurai,7.1,100
+Hissatsu: Gyoten,samurai,7.2,100
+Hissatsu: Yaten,samurai,7.1,100
+Hissatsu: Yaten,samurai,7.2,100
+Hissatsu: Kyuten,samurai,7.1,120
+Hissatsu: Kyuten,samurai,7.2,100
+"Hissatsu: Guren",samurai,7.1,500
+"Hissatsu: Guren",samurai,7.2,400
+Hissatsu: Senei,samurai,7.1,800
+Hissatsu: Senei,samurai,7.2,800
+Shoha,samurai,7.1,640
+Shoha,samurai,7.2,640
+Fuko,samurai,7.1,100
+Fuko,samurai,7.2,100
+Ogi Namikiri,samurai,7.1,900
+Ogi Namikiri,samurai,7.2,1000
+Kaeshi: Namikiri,samurai,7.1,900
+Kaeshi: Namikiri,samurai,7.2,1000
+Gyofu,samurai,7.1,240
+Gyofu,samurai,7.2,240
+Zanshin,samurai,7.1,900
+Zanshin,samurai,7.2,940
+Ruin,summoner,7.1,240
+Ruin,summoner,7.2,240
+Summon Ruby,summoner,7.1,400
+Summon Ruby,summoner,7.2,400
+Ruby Ruin,summoner,7.1,340
+Ruby Ruin,summoner,7.2,340
+Fester,summoner,7.1,340
+Fester,summoner,7.2,340
+Energy Drain,summoner,7.1,200
+Energy Drain,summoner,7.2,200
+"Summon Topaz",summoner,7.1,400
+"Summon Topaz",summoner,7.2,400
+Topaz Ruin,summoner,7.1,240
+Topaz Ruin,summoner,7.2,240
+Summon Emerald,summoner,7.1,400
+Summon Emerald,summoner,7.2,400
+Emerald Ruin,summoner,7.1,160
+Emerald Ruin,summoner,7.2,160
+Outburst,summoner,7.1,100
+Outburst,summoner,7.2,100
+Ruby Outburst,summoner,7.1,160
+Ruby Outburst,summoner,7.2,160
+Topaz Outburst,summoner,7.1,110
+Topaz Outburst,summoner,7.2,110
+Emerald Outburst,summoner,7.1,70
+Emerald Outburst,summoner,7.2,70
+"Ruin II",summoner,7.1,270
+"Ruin II",summoner,7.2,270
+"Summon Ifrit",summoner,7.1,600
+"Summon Ifrit",summoner,7.2,600
+Ruby Ruin II,summoner,7.1,380
+Ruby Ruin II,summoner,7.2,380
+Topaz Ruin II,summoner,7.1,270
+Topaz Ruin II,summoner,7.2,270
+Emerald Ruin II,summoner,7.1,170
+Emerald Ruin II,summoner,7.2,170
+"Summon Titan",summoner,7.1,600
+"Summon Titan",summoner,7.2,600
+"Painflare",summoner,7.1,150
+"Painflare",summoner,7.2,150
+"Summon Garuda",summoner,7.1,600
+"Summon Garuda",summoner,7.2,600
+"Energy Siphon",summoner,7.1,100
+"Energy Siphon",summoner,7.2,100
+"Ruin III",summoner,7.1,360
+"Ruin III",summoner,7.2,360
+Ruby Ruin III,summoner,7.1,410
+Ruby Ruin III,summoner,7.2,410
+Topaz Ruin III,summoner,7.1,300
+Topaz Ruin III,summoner,7.2,300
+Emerald Ruin III,summoner,7.1,180
+Emerald Ruin III,summoner,7.2,180
+Astral Impulse,summoner,7.1,500
+Astral Impulse,summoner,7.2,500
+Astral Flare,summoner,7.1,180
+Astral Flare,summoner,7.2,180
+Deathflare,summoner,7.1,500
+Deathflare,summoner,7.2,500
+Ruin IV,summoner,7.1,490
+Ruin IV,summoner,7.2,490
+Wyrmwave,summoner,7.1,150
+Wyrmwave,summoner,7.2,150
+Enkindle Bahamut,summoner,7.1,1300
+Enkindle Bahamut,summoner,7.2,1300
+Akh Morn,summoner,7.1,1300
+Akh Morn,summoner,7.2,1300
+Ruby Rite,summoner,7.1,540
+Ruby Rite,summoner,7.2,540
+Topaz Rite,summoner,7.1,340
+Topaz Rite,summoner,7.2,340
+Emerald Rite,summoner,7.1,240
+Emerald Rite,summoner,7.2,240
+Tri-disaster,summoner,7.1,120
+Tri-disaster,summoner,7.2,120
+Ruby Disaster,summoner,7.1,190
+Ruby Disaster,summoner,7.2,190
+Topaz Disaster,summoner,7.1,130
+Topaz Disaster,summoner,7.2,130
+Emerald Disaster,summoner,7.1,90
+Emerald Disaster,summoner,7.2,90
+Fountain of Fire,summoner,7.1,580
+Fountain of Fire,summoner,7.2,580
+Brand of Purgatory,summoner,7.1,240
+Brand of Purgatory,summoner,7.2,240
+Enkindle Phoenix,summoner,7.1,1300
+Enkindle Phoenix,summoner,7.2,1300
+Scarlet Flame,summoner,7.1,150
+Scarlet Flame,summoner,7.2,150
+Revelation,summoner,7.1,1300
+Revelation,summoner,7.2,1300
+Ruby Catastrophe,summoner,7.1,210
+Ruby Catastrophe,summoner,7.2,210
+Topaz Catastrophe,summoner,7.1,140
+Topaz Catastrophe,summoner,7.2,140
+Emerald Catastrophe,summoner,7.1,100
+Emerald Catastrophe,summoner,7.2,100
+Crimson Cyclone,summoner,7.1,490
+Crimson Cyclone,summoner,7.2,490
+Crimson Strike,summoner,7.1,490
+Crimson Strike,summoner,7.2,490
+Mountain Buster,summoner,7.1,160
+Mountain Buster,summoner,7.2,160
+Slipstream,summoner,7.1,490
+Slipstream,summoner,7.2,490
+Summon Ifrit II,summoner,7.1,800
+Summon Ifrit II,summoner,7.2,800
+Summon Titan II,summoner,7.1,800
+Summon Titan II,summoner,7.2,800
+Summon Garuda II,summoner,7.1,800
+Summon Garuda II,summoner,7.2,800
+Necrotize,summoner,7.1,440
+Necrotize,summoner,7.2,460
+Searing Flash,summoner,7.1,600
+Searing Flash,summoner,7.2,600
+Umbral Impulse,summoner,7.1,620
+Umbral Impulse,summoner,7.2,620
+Umbral Flare,summoner,7.1,280
+Umbral Flare,summoner,7.2,280
+Sunflare,summoner,7.1,800
+Sunflare,summoner,7.2,800
+Enkindle Solar Bahamut,summoner,7.1,1400
+Enkindle Solar Bahamut,summoner,7.2,1500
+Luxwave,summoner,7.1,160
+Luxwave,summoner,7.2,160
+Exodus,summoner,7.1,1400
+Exodus,summoner,7.2,1500
+Ruin,scholar,7.1,150
+Ruin,scholar,7.2,150
+Ruin II,scholar,7.1,220
+Ruin II,scholar,7.2,220
+Energy Drain,scholar,7.1,100
+Energy Drain,scholar,7.2,100
+Art of War,scholar,7.1,165
+Art of War,scholar,7.2,165
+"Broil",scholar,7.1,220
+"Broil",scholar,7.2,220
+Broil II,scholar,7.1,240
+Broil II,scholar,7.2,240
+Broil III,scholar,7.1,255
+Broil III,scholar,7.2,255
+Broil IV,scholar,7.1,310
+Broil IV,scholar,7.2,310
+Art of War II,scholar,7.1,180
+Art of War II,scholar,7.2,180
+Steel Fangs,viper,7.1,200
+Steel Fangs,viper,7.2,200
+Hunter's Sting,viper,7.1,300
+Hunter's Sting,viper,7.2,300
+Reaving Fangs,viper,7.1,200
+Reaving Fangs,viper,7.2,200
+Writhing Snap,viper,7.1,200
+Writhing Snap,viper,7.2,200
+Swiftskin's Sting,viper,7.1,300
+Swiftskin's Sting,viper,7.2,300
+Steel Maw,viper,7.1,100
+Steel Maw,viper,7.2,100
+Flanksting Strike,viper,7.1,340
+Flanksting Strike,viper,7.2,340
+Flanksbane Fang,viper,7.1,340
+Flanksbane Fang,viper,7.2,340
+Hindsting Strike,viper,7.1,340
+Hindsting Strike,viper,7.2,340
+Hindsbane Fang,viper,7.1,340
+Hindsbane Fang,viper,7.2,340
+Reaving Maw,viper,7.1,100
+Reaving Maw,viper,7.2,100
+Hunter's Bite,viper,7.1,130
+Hunter's Bite,viper,7.2,130
+Swiftskin's Bite,viper,7.1,130
+Swiftskin's Bite,viper,7.2,130
+Jagged Maw,viper,7.1,140
+Jagged Maw,viper,7.2,140
+Bloodied Maw,viper,7.1,140
+Bloodied Maw,viper,7.2,140
+Death Rattle,viper,7.1,280
+Death Rattle,viper,7.2,280
+Last Lash,viper,7.1,100
+Last Lash,viper,7.2,100
+Vicewinder,viper,7.1,500
+Vicewinder,viper,7.2,500
+Hunter's Coil,viper,7.1,570
+Hunter's Coil,viper,7.2,570
+Swiftskin's Coil,viper,7.1,570
+Swiftskin's Coil,viper,7.2,570
+Vicepit,viper,7.1,220
+Vicepit,viper,7.2,220
+Hunter's Den,viper,7.1,280
+Hunter's Den,viper,7.2,280
+Swiftskin's Den,viper,7.1,280
+Swiftskin's Den,viper,7.2,280
+Twinfang Bite,viper,7.1,120
+Twinfang Bite,viper,7.2,120
+Twinblood Bite,viper,7.1,120
+Twinblood Bite,viper,7.2,120
+Twinfang Thresh,viper,7.1,50
+Twinfang Thresh,viper,7.2,50
+Twinblood Thresh,viper,7.1,50
+Twinblood Thresh,viper,7.2,50
+Uncoiled Fury,viper,7.1,680
+Uncoiled Fury,viper,7.2,680
+Reawaken,viper,7.1,750
+Reawaken,viper,7.2,750
+First Generation,viper,7.1,480
+First Generation,viper,7.2,480
+Second Generation,viper,7.1,480
+Second Generation,viper,7.2,480
+Third Generation,viper,7.1,480
+Third Generation,viper,7.2,480
+Fourth Generation,viper,7.1,480
+Fourth Generation,viper,7.2,480
+Uncoiled Twinfang,viper,7.1,120
+Uncoiled Twinfang,viper,7.2,120
+Uncoiled Twinblood,viper,7.1,120
+Uncoiled Twinblood,viper,7.2,120
+Ouroboros,viper,7.1,1150
+Ouroboros,viper,7.2,1150
+First Legacy,viper,7.1,280
+First Legacy,viper,7.2,320
+Second Legacy,viper,7.1,280
+Second Legacy,viper,7.2,320
+Third Legacy,viper,7.1,280
+Third Legacy,viper,7.2,320
+Fourth Legacy,viper,7.1,280
+Fourth Legacy,viper,7.2,320
+Heavy Swing,warrior,7.1,220
+Heavy Swing,warrior,7.2,240
+Maim,warrior,7.1,190
+Maim,warrior,7.2,190
+Overpower,warrior,7.1,110
+Overpower,warrior,7.2,110
+"Tomahawk",warrior,7.1,150
+"Tomahawk",warrior,7.2,150
+Storm's Path,warrior,7.1,200
+Storm's Path,warrior,7.2,220
+"Inner Beast",warrior,7.1,330
+"Inner Beast",warrior,7.2,330
+Vengeance,warrior,7.1,55
+Vengeance,warrior,7.2,55
+"Mythril Tempest",warrior,7.1,100
+"Mythril Tempest",warrior,7.2,100
+"Steel Cyclone",warrior,7.1,160
+"Steel Cyclone",warrior,7.2,160
+Storm's Eye,warrior,7.1,200
+Storm's Eye,warrior,7.2,220
+"Fell Cleave",warrior,7.1,580
+"Fell Cleave",warrior,7.2,580
+"Decimate",warrior,7.1,180
+"Decimate",warrior,7.2,180
+Onslaught,warrior,7.1,150
+Onslaught,warrior,7.2,150
+Upheaval,warrior,7.1,400
+Upheaval,warrior,7.2,420
+Chaotic Cyclone,warrior,7.1,300
+Chaotic Cyclone,warrior,7.2,200
+Inner Chaos,warrior,7.1,660
+Inner Chaos,warrior,7.2,660
+Orogeny,warrior,7.1,150
+Orogeny,warrior,7.2,150
+Primal Rend,warrior,7.1,700
+Primal Rend,warrior,7.2,700
+Damnation,warrior,7.1,55
+Damnation,warrior,7.2,55
+Primal Wrath,warrior,7.1,700
+Primal Wrath,warrior,7.2,700
+Primal Ruination,warrior,7.1,780
+Primal Ruination,warrior,7.2,780
+Stone,whitemage,7.1,140
+Stone,whitemage,7.2,140
+Aero,whitemage,7.1,50
+Aero,whitemage,7.2,50
+Stone II,whitemage,7.1,190
+Stone II,whitemage,7.2,190
+"Holy",whitemage,7.1,140
+"Holy",whitemage,7.2,140
+Aero II,whitemage,7.1,50
+Aero II,whitemage,7.2,50
+"Stone III",whitemage,7.1,220
+"Stone III",whitemage,7.2,220
+"Assize",whitemage,7.1,400
+"Assize",whitemage,7.2,400
+Stone IV,whitemage,7.1,260
+Stone IV,whitemage,7.2,260
+Dia,whitemage,7.1,75
+Dia,whitemage,7.2,80
+Glare,whitemage,7.1,290
+Glare,whitemage,7.2,290
+Afflatus Misery,whitemage,7.1,1360
+Afflatus Misery,whitemage,7.2,1360
+Glare III,whitemage,7.1,340
+Glare III,whitemage,7.2,340
+Holy III,whitemage,7.1,150
+Holy III,whitemage,7.2,150
+Glare IV,whitemage,7.1,640
+Glare IV,whitemage,7.2,640
+Dosis,sage,7.1,300
+Dosis,sage,7.2,300
+Phlegma,sage,7.1,400
+Phlegma,sage,7.2,400
+Dyskrasia,sage,7.1,160
+Dyskrasia,sage,7.2,160
+Toxikon,sage,7.1,300
+Toxikon,sage,7.2,300
+Dosis II,sage,7.1,320
+Dosis II,sage,7.2,320
+Phlegma II,sage,7.1,490
+Phlegma II,sage,7.2,490
+Dosis III,sage,7.1,370
+Dosis III,sage,7.2,370
+Phlegma III,sage,7.1,600
+Phlegma III,sage,7.2,600
+Dyskrasia II,sage,7.1,170
+Dyskrasia II,sage,7.2,170
+Toxikon II,sage,7.1,370
+Toxikon II,sage,7.2,370
+Pneuma,sage,7.1,370
+Pneuma,sage,7.2,370
+Psyche,sage,7.1,600
+Psyche,sage,7.2,600

@@ -1,0 +1,462 @@
+
+
+```{r}
+library(tidyverse)
+library(jsonlite)
+library(purrr)
+#library(php)
+#install.packages('PHP')
+```
+
+read-in
+
+```{r}
+data_72 = read_csv('./data/ffxiv7-2.csv')
+```
+
+```{r}
+ast71 = read_csv('./data/7-1ast.csv', col_types=c('cccccccccc'))
+blm71 = read_csv('./data/7-1blm.csv', col_types=c('cccccccccc'))
+brd71 = read_csv('./data/7-1brd.csv', col_types=c('cccccccccc'))
+dnc71 = read_csv('./data/7-1dnc.csv', col_types=c('cccccccccc'))
+drg71 = read_csv('./data/7-1drg.csv', col_types=c('cccccccccc'))
+drk71 = read_csv('./data/7-1drk.csv', col_types=c('cccccccccc'))
+gnb71 = read_csv('./data/7-1gnb.csv', col_types=c('cccccccccc'))
+mch71 = read_csv('./data/7-1mch.csv', col_types=c('cccccccccc'))
+mnk71 = read_csv('./data/7-1mnk.csv', col_types=c('cccccccccc'))
+nin71 = read_csv('./data/7-1nin.csv', col_types=c('cccccccccc'))
+pct71 = read_csv('./data/7-1pct.csv', col_types=c('cccccccccc'))
+pld71 = read_csv('./data/7-1pld.csv', col_types=c('cccccccccc'))
+rdm71 = read_csv('./data/7-1rdm.csv', col_types=c('cccccccccc'))
+rpr71 = read_csv('./data/7-1rpr.csv', col_types=c('cccccccccc'))
+sam71 = read_csv('./data/7-1sam.csv', col_types=c('cccccccccc'))
+smn71 = read_csv('./data/7-1smn.csv', col_types=c('cccccccccc'))
+sch71 = read_csv('./data/7-1sch.csv', col_types=c('cccccccccc'))
+vpr71 = read_csv('./data/7-1vpr.csv', col_types=c('cccccccccc'))
+war71 = read_csv('./data/7-1war.csv', col_types=c('cccccccccc'))
+whm71 = read_csv('./data/7-1whm.csv', col_types=c('cccccccccc'))
+sge71 = read_csv('./data/7-1sge.csv', col_types=c('cccccccccc'))
+```
+
+```{r}
+data_71 = bind_rows(ast71, blm71, brd71, dnc71, drg71, drk71, 
+  gnb71, mch71, mnk71, nin71, pct71, pld71, rdm71, rpr71, sam71, 
+  smn71, sch71, vpr71, war71, whm71, sge71) %>% 
+  filter(is.na(Effect) == FALSE)
+```
+
+wrangling 
+
+```{r}
+data_72 = data_72 %>% 
+  filter(is.na(Effect) == FALSE) %>%
+  mutate( 
+    job = str_split_i(pages, pattern = '/', i=5), 
+    potency = str_split_i(Effect, pattern = "potency of ", i=2)) %>% 
+  mutate(potency = str_split_i(potency, pattern="\n", i=1)) %>% 
+  mutate(potency = str_split_i(potency, pattern = ' ', i=1))
+```
+
+```{r}
+potencies_72 = data_72 %>% 
+  select(`Action Name`, job, potency) %>% 
+  mutate(potency = str_replace_all(potency, '[^[:alnum:]]', '')) %>% 
+  mutate(potency72 = as.numeric(potency)) %>%
+  filter(is.na(potency72) == FALSE) %>% 
+  select(-potency)
+
+```
+
+```{r}
+data_71 = data_71 %>% 
+  filter(is.na(Effect) == FALSE) %>%
+  mutate( 
+    job = str_split_i(`web-scraper-start-url`, pattern = '/', i=10), 
+    potency = str_split_i(Effect, pattern = "potency of ", i=2)) %>% 
+  mutate(potency = str_split_i(potency, pattern="\n", i=1)) %>% 
+  mutate(potency = str_split_i(potency, pattern = ' ', i=1))
+
+str_split(data_71$`web-scraper-start-url`[1], pattern = '/')
+```
+
+```{r}
+potencies_71 = data_71 %>% 
+  select(`Action Name`, job, potency) %>% 
+  mutate(potency = str_replace_all(potency, '[^[:alnum:]]', '')) %>% 
+  mutate(potency71 = as.numeric(potency)) %>%
+  filter(is.na(potency71) == FALSE) %>% 
+  select(-potency)
+
+```
+
+visuals 
+
+```{r} 
+potencies = inner_join(potencies_71, potencies_72) 
+```
+
+```{r}
+avg_potencies = potencies %>% 
+  group_by(job) %>% 
+  summarize(num_actions = n(),
+    `7.1` = sum(potency71) / num_actions, 
+    `7.2` = sum(potency72) / num_actions) %>% 
+  mutate(Role = case_when( 
+    job %in% c("astrologian", "sage", "scholar", "whitemage") ~ "healer", 
+    job %in% c("gunbreaker", "darkknight", "warrior", "paladin") ~ "tank", 
+    .default = "dps"
+    ))
+```
+
+```{r}
+avg_potencies %>% pivot_longer(cols=c("7.1", "7.2"), names_to = "patch", values_to = "potency") %>% 
+  ggplot(aes(x=patch, y = potency, group = job, color=Role, shape=Role)) + 
+  geom_line(alpha = 0.7) + 
+  geom_text(aes(label=job), hjust = 0, vjust = 0) +
+  geom_point() + 
+  labs(
+    x="Patch", 
+    y = "Average Potency", 
+    title = "Potency by Patch"
+  )
+# ggsave("./visuals/potency slope.jpg")
+```
+```{r}
+avg_potencies %>% pivot_longer(cols=c("7.1", "7.2"), names_to = "patch", values_to = "potency") %>% 
+  ggplot(aes(x=patch, y = potency, group = job, color=Role, shape=Role)) + 
+  geom_line(alpha = 0.7) + 
+  geom_text(aes(label=job), hjust = 0, vjust = 0) +
+  geom_point() + 
+  ylim(190, 550) + 
+  labs(
+    x="Patch", 
+    y = "Average Potency", 
+    title = "Potency by Patch"
+  )
+# ggsave('./visuals/potency slope zoom.jpg')
+```
+
+
+export 
+
+```{r}
+potencies_print = potencies %>% 
+  rename(`7.1` = potency71, 
+         `7.2` = potency72) %>% 
+  pivot_longer(cols=c("7.1", "7.2"), names_to = "patch", values_to = "potency")
+job_print = avg_potencies %>% 
+  pivot_longer(cols=c("7.1", "7.2"), names_to = "patch_number", values_to = "avg_potency")
+#write_csv(potencies_print, "./data/load_potencies.csv")
+#write_csv(avg_potencies %>% select(job, Role), "./data/load_jobs.csv")
+#write_csv(job_print %>% select(-num_actions, -Role), "./data/load_avgs.csv") 
+#write_csv(potency_71, './data/potency-7.1.csv')
+#write_csv(potency_72, './data/potency-7.2.csv')
+```
+
+
+### raid data 
+
+read in 
+
+```{r}
+lhw_raw = read_csv('./data/lhw_raw_data.csv') %>% 
+  filter(rankings != "{'data': []}") %>% 
+  filter(str_detect(rankings, "'difficulty': 101"))
+  #str_replace_all(string=lhw_raw$rankings, pattern="'", replacement='"')
+cw_raw = read_csv('./data/cw_raw_data.csv') %>% 
+  filter(rankings != "{'data': []}") %>% 
+  filter(str_detect(rankings, "'difficulty': 101"))
+  #str_replace_all(cw_raw$rankings, "'", '"')
+```
+
+
+filtering 
+
+```{r}
+#write_csv(potency_71, './data/potency-7.1.csv')
+#write_csv(potency_72, './data/potency-7.2.csv')
+```
+
+
+```{r}
+# this is going to be intense
+# for a single report: test 
+log1 = lhw_raw[2,3] %>% 
+  str_remove_all("'reportsBlacklistForCharacters': \\[\\], ") %>%
+  str_replace_all("'", '"') %>% 
+  fromJSON(flatten = T) %>% 
+  data.frame()
+
+# lhw_raw[1,3] %>%
+#   str_remove_all("'reportsBlacklistForCharacters': \\[\\], ") %>%
+#   #str_replace_all("'", '"') %>%
+#   str_replace_all(" '[[:alnum:]]", ' "\\0') %>%
+#   str_replace_all("[[:alnum:]]'[,: ]", '\\0"\\0') %>%
+#   #print()
+#   #fromJSON(flatten = T) %>%
+#   #data.frame()
+
+# separate tables by role 
+log1_tanks = unnest(log1, cols = c(data.roles.tanks.characters), names_sep='.') %>% 
+  select(data.encounter.name, data.roles.tanks.characters.name, data.roles.tanks.characters.class, data.roles.tanks.characters.amount, data.roles.tanks.characters.rankPercent) %>% 
+  rename(Fight = data.encounter.name,
+    Name = data.roles.tanks.characters.name,
+         Job = data.roles.tanks.characters.class, 
+         DPS = data.roles.tanks.characters.amount, 
+         Rank = data.roles.tanks.characters.rankPercent
+  )
+
+log1_heals = unnest(log1, cols = c(data.roles.healers.characters), names_sep='.') %>% 
+  select(data.encounter.name, data.roles.healers.characters.name, data.roles.healers.characters.class, data.roles.healers.characters.amount, data.roles.healers.characters.rankPercent) %>% 
+  rename(Fight = data.encounter.name,
+         Name = data.roles.healers.characters.name,
+         Job = data.roles.healers.characters.class,
+         DPS = data.roles.healers.characters.amount, 
+         Rank = data.roles.healers.characters.rankPercent
+         )
+  
+log1_dps = unnest(log1, cols = data.roles.dps.characters, names_sep = '.') %>% 
+  select(data.encounter.name, data.roles.dps.characters.name, data.roles.dps.characters.class, data.roles.dps.characters.amount, data.roles.dps.characters.rankPercent) %>% 
+  rename(Fight = data.encounter.name,
+         Name = data.roles.dps.characters.name,
+         Job = data.roles.dps.characters.class, 
+         DPS = data.roles.dps.characters.amount, 
+         Rank = data.roles.dps.characters.rankPercent)
+
+# recombine 
+log1_clean = bind_rows(log1_tanks, log1_heals, log1_dps)
+  
+```
+
+```{r}
+# lhw_save = lhw_raw %>% filter(str_detect(rankings, ",") == FALSE)
+# 
+# for (i in 1:58) {
+#   report = 
+# }
+```
+
+
+```{r}
+lhw_data = data.frame(Fight = as.character(), 
+                      Name = as.character(), 
+                      Job = as.character(), 
+                      DPS = as.numeric(), 
+                      Rank = as.integer())
+for (i in c(2, 4:6, 8:9, 14:16, 19:20, 23, 25:26, 28, 30, 34:37, 42, 47:50, 53:54, 58)) {
+  #print(i)
+  
+  report = lhw_raw[i,3] %>% 
+  str_remove_all("'reportsBlacklistForCharacters': \\[\\], ") %>%
+  str_replace_all("'", '"') %>% 
+  fromJSON(flatten = T) %>% 
+  data.frame()
+
+  # separate tables by role 
+  report_tanks = unnest(report, cols = c(data.roles.tanks.characters), names_sep='.') %>% 
+    select(data.encounter.name, data.roles.tanks.characters.name, data.roles.tanks.characters.class, data.roles.tanks.characters.amount, data.roles.tanks.characters.rankPercent) %>% 
+    rename(Fight = data.encounter.name,
+      Name = data.roles.tanks.characters.name,
+           Job = data.roles.tanks.characters.class, 
+           DPS = data.roles.tanks.characters.amount, 
+           Rank = data.roles.tanks.characters.rankPercent
+    )
+  
+  report_heals = unnest(report, cols = c(data.roles.healers.characters), names_sep='.') %>% 
+    select(data.encounter.name, data.roles.healers.characters.name, data.roles.healers.characters.class, data.roles.healers.characters.amount, data.roles.healers.characters.rankPercent) %>% 
+    rename(Fight = data.encounter.name,
+           Name = data.roles.healers.characters.name,
+           Job = data.roles.healers.characters.class,
+           DPS = data.roles.healers.characters.amount, 
+           Rank = data.roles.healers.characters.rankPercent
+           )
+    
+  report_dps = unnest(report, cols = data.roles.dps.characters, names_sep = '.') %>% 
+    select(data.encounter.name, data.roles.dps.characters.name, data.roles.dps.characters.class, data.roles.dps.characters.amount, data.roles.dps.characters.rankPercent) %>% 
+    rename(Fight = data.encounter.name,
+           Name = data.roles.dps.characters.name,
+           Job = data.roles.dps.characters.class, 
+           DPS = data.roles.dps.characters.amount, 
+           Rank = data.roles.dps.characters.rankPercent)
+  
+  # recombine 
+  report_clean = bind_rows(report_tanks, report_heals, report_dps)
+  
+  # add to full list 
+  lhw_data = bind_rows(lhw_data, report_clean)
+}
+
+lhw_data = lhw_data %>% 
+  mutate(Role = case_when( 
+    Job %in% c("Astrologian", "Sage", "Scholar", "WhiteMage") ~ "Healer", 
+    Job %in% c("Gunbreaker", "DarkKnight", "Warrior", "Paladin") ~ "Tank", 
+    .default = "DPS"
+    )) %>% 
+  mutate(patch_number = 7.1) %>% 
+  filter(Fight %in% c("Black Cat","Honey B. Lovely","Brute Bomber","Wicked Thunder"))
+```
+
+```{r}
+unique(lhw_data$Fight)
+```
+
+```{r}
+cw_data = data.frame(Fight = as.character(), 
+                      Name = as.character(), 
+                      Job = as.character(), 
+                      DPS = as.numeric(), 
+                      Rank = as.integer())
+for (i in c(1:2, 4:5, 11:15, 21, 23, 25, 28, 30)) {
+  #print(i)
+  
+  report = cw_raw[i,3] %>% 
+  str_remove_all("'reportsBlacklistForCharacters': \\[\\], ") %>%
+  str_replace_all("'", '"') %>% 
+  fromJSON(flatten = T) %>% 
+  data.frame()
+
+  # separate tables by role 
+  report_tanks = unnest(report, cols = c(data.roles.tanks.characters), names_sep='.') %>% 
+    select(data.encounter.name, data.roles.tanks.characters.name, data.roles.tanks.characters.class, data.roles.tanks.characters.amount, data.roles.tanks.characters.rankPercent) %>% 
+    rename(Fight = data.encounter.name,
+      Name = data.roles.tanks.characters.name,
+           Job = data.roles.tanks.characters.class, 
+           DPS = data.roles.tanks.characters.amount, 
+           Rank = data.roles.tanks.characters.rankPercent
+    )
+  
+  report_heals = unnest(report, cols = c(data.roles.healers.characters), names_sep='.') %>% 
+    select(data.encounter.name, data.roles.healers.characters.name, data.roles.healers.characters.class, data.roles.healers.characters.amount, data.roles.healers.characters.rankPercent) %>% 
+    rename(Fight = data.encounter.name,
+           Name = data.roles.healers.characters.name,
+           Job = data.roles.healers.characters.class,
+           DPS = data.roles.healers.characters.amount, 
+           Rank = data.roles.healers.characters.rankPercent
+           )
+    
+  report_dps = unnest(report, cols = data.roles.dps.characters, names_sep = '.') %>% 
+    select(data.encounter.name, data.roles.dps.characters.name, data.roles.dps.characters.class, data.roles.dps.characters.amount, data.roles.dps.characters.rankPercent) %>% 
+    rename(Fight = data.encounter.name,
+           Name = data.roles.dps.characters.name,
+           Job = data.roles.dps.characters.class, 
+           DPS = data.roles.dps.characters.amount, 
+           Rank = data.roles.dps.characters.rankPercent)
+  
+  # recombine 
+  report_clean = bind_rows(report_tanks, report_heals, report_dps)
+  
+  # add to full list 
+  cw_data = bind_rows(cw_data, report_clean)
+}
+
+cw_data = cw_data %>% 
+  mutate(Role = case_when( 
+    Job %in% c("Astrologian", "Sage", "Scholar", "WhiteMage") ~ "Healer", 
+    Job %in% c("Gunbreaker", "DarkKnight", "Warrior", "Paladin") ~ "Tank", 
+    .default = "DPS"
+    )) %>% 
+  mutate(patch_number = 7.2) %>%
+  filter(Fight != "The Underkeep")
+
+print(unique(cw_data$Fight))
+```
+
+
+```{r}
+# shit that was overly complicated and didn't work: 
+#names(log1)
+
+# log1_data = log1 %>% 
+#   select(data.encounter.name, data.roles.tanks.characters.name, data.roles.tanks.characters.class, data.roles.tanks.characters.amount, data.roles.tanks.characters.rankPercent, 
+#          data.roles.healers.characters.name, data.roles.healers.characters.class, data.roles.healers.characters.amount, data.roles.healers.characters.rankPercent, 
+#          data.roles.dps.characters.name, data.roles.dps.characters.class, data.roles.dps.characters.amount, data.roles.dps.characters.rankPercent) %>% 
+#   rename(Boss = data.encounter.name, 
+#          Tank_Name = data.roles.tanks.characters.name,
+#          Tank_Jobs = data.roles.tanks.characters.class, 
+#          Tank_DPS = data.roles.tanks.characters.amount, 
+#          Tank_Ranks = data.roles.tanks.characters.rankPercent, 
+#          Healer_Name = data.roles.healers.characters.name,
+#          Healer_Jobs = data.roles.healers.characters.class,
+#          Healer_DPS = data.roles.healers.characters.amount, 
+#          Healer_Ranks = data.roles.healers.characters.rankPercent, 
+#          DPS_Name = data.roles.dps.characters.name,
+#          DPS_Jobs = data.roles.dps.characters.class, 
+#          DPS_DPS = data.roles.dps.characters.amount, 
+#          DPS_Ranks = data.roles.dps.characters.rankPercent) 
+# 
+# log1_clean = log1_data %>% 
+#   pivot_longer(cols = c(2, 6, 10), names_to = 'Role_Name', values_to = 'Name') %>%
+#   pivot_longer(cols=c(2, 5, 8), names_to = 'Role', values_to = 'Job') %>% 
+#   pivot_longer(cols = c(2, 4, 6), names_to = 'role_dps', values_to = 'dps') %>% 
+#   pivot_longer(cols = 2:4, names_to = 'role_rank', values_to = 'rank') %>% 
+#   select(-role_dps, -role_rank, -Role_Name) %>% 
+#   mutate(Role = str_remove(Role, '_Jobs'))
+# 
+# unique(log1_clean$Name)
+```
+
+plotting 
+
+```{r}
+job_order = names(sort(tapply(lhw_data$DPS, lhw_data$Job, max)))
+lhw_data$Job = factor(lhw_data$Job, levels=job_order)
+ggplot(lhw_data, aes(x = Job, y = DPS, fill=Role)) + 
+  geom_boxplot()+ 
+  coord_flip() +
+  labs(title = "Patch 7.05: Light-Heavyweight")
+# ggsave("./visuals/lhw boxes.jpg")
+```
+
+```{r}
+lhw_data %>% 
+  filter(Role == "DPS") %>% 
+  ggplot(aes(x = Job, y = DPS, fill=Role)) + 
+  geom_boxplot()+ 
+  coord_flip() +
+  labs(title = "Patch 7.05: Light-Heavyweight") + 
+  theme(legend.position = 'none')
+#ggsave("./visuals/lhw boxes dps.jpg")
+```
+
+```{r}
+job_order = names(sort(tapply(cw_data$DPS, cw_data$Job, max)))
+cw_data$Job = factor(cw_data$Job, levels=job_order)
+ggplot(cw_data, aes(x = Job, y = DPS, fill=Role)) + 
+  geom_boxplot()+ 
+  coord_flip() +
+  labs(title = "Patch 7.2: Cruiserweight")
+#ggsave("./visuals/cw boxes.jpg")
+```
+
+```{r}
+cw_data %>% 
+  filter(Role == "DPS") %>% 
+  ggplot(aes(x = Job, y = DPS, fill=Role)) + 
+  geom_boxplot()+ 
+  coord_flip() +
+  labs(title = "Patch 7.2: Cruiserweight") + 
+  theme(legend.position = 'none')
+#ggsave("./visuals/cw boxes dps.jpg")
+```
+
+```{r}
+# by fight, if i get bored, though this data is shit 
+```
+
+
+export 
+
+```{r}
+load_raids = bind_rows(lhw_data, cw_data) %>% 
+  mutate(Job = tolower(Job))
+load_fights = data.frame( 
+  fight_name = unique(load_raids$Fight), 
+  patch_number = case_when( 
+    load_fights$fight_name %in% c("Black Cat","Honey B. Lovely","Brute Bomber","Wicked Thunder") ~ 7.1, 
+    .default = 7.2))
+#write_csv(load_fights, file="./data/load_fights.csv")
+#write_csv(load_raids %>% select(-Role), file="./data/load_reports.csv")
+#write_csv(lhw_data, file="lhw_data.csv")
+#write_csv(cw_data, file="cw_data.csv")
+```
+
